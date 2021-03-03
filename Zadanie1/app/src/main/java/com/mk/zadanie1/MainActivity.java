@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         resultTextView = findViewById(R.id.result_text_view);
     }
 
-    private double dodawanieLiczb(double first, double second){
+    public static double dodawanieLiczb(double first, double second){
         return first + second;
     }
     public void addNumbers(View view) {
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private double odejmowanieLiczb(double first, double second){
+    public static double odejmowanieLiczb(double first, double second){
         return first-second;
     }
     public void subNumbers(View view) {
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             showResult(Double.toString(odejmowanieLiczb(firstNumber, secondNumber)));
         }
     }
-    private double mnozenieLiczb(double first, double second){
+    public static double mnozenieLiczb(double first, double second){
         return first * second;
     }
     public void mulNumbers(View view) {
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             showResult(Double.toString(mnozenieLiczb(firstNumber, secondNumber)));
         }
     }
-    private double dzielenieLiczb(double first, double second){
+    public static double dzielenieLiczb(double first, double second){
         return first / second;
     }
     public void divNumbers(View view) {
